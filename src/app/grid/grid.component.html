@@ -1,0 +1,18 @@
+<table>
+   <tr *ngFor="let cellY of range">
+      <td *ngFor="let cellX of range">
+         <app-cell
+            [ownX]="cellX"
+            [ownY]="cellY"
+            [currentX]="currentX"
+            [currentY]="currentY"
+            [facing]="directions[currentDirectionKey]">
+         </app-cell>
+      </td>
+   </tr>
+</table>
+<div class="controls">
+   <button><i class="fas fa-walking" (click)="move()"></i></button>
+   <button><i class="fas fa-undo" (click)="rotate('left')"></i></button>
+   <button><i class="fas fa-redo" (click)="rotate('right')"></i></button>
+</div>

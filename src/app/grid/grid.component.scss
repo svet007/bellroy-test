@@ -1,0 +1,18 @@
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+td {
+   border: 1px solid black;
+   margin: 0;
+   padding: 0;
+   font-size: 30px;
+   padding: 5px;
+}
+
+.controls {
+   display: table;
+   margin: 15px auto;
+}

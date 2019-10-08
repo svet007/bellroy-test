@@ -1,0 +1,7 @@
+<i class="fas fa-robot"
+  [class.hidden]="!(currentX == ownX && currentY == ownY)"
+  [ngClass]="{
+    'fa-rotate-90': facing == 'west',
+    'fa-rotate-180': facing == 'north',
+    'fa-rotate-270': facing == 'east'}">
+</i>
